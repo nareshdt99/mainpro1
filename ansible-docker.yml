@@ -1,11 +1,8 @@
 ---
-- hosts: localhost
+- hosts: web
   gather_facts: no
   become: yes
-  vars:
-    ansible_python_interpreter: /bin/python3
   tasks:
-    - debug: var=ansible_host
     - name: create build directory
       file:
         path: /root/demo-dockerfile
