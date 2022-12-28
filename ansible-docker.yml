@@ -18,7 +18,8 @@
         group: root
         mode: '0644'
     - name: Build the image on local
-      connection: local
+      #connection: local
+      owner: root
       docker_image:
        name: democontainer
        source: build
