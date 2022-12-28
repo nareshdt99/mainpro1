@@ -19,7 +19,7 @@
         mode: '0644'
     - name: Build the image on local
       #connection: local
-      owner: root
+      #owner: root
       docker_image:
        name: democontainer
        source: build
