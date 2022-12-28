@@ -23,6 +23,7 @@
       docker_image:
        name: democontainer
        source: build
+       owner: root
        build:
         path: .
        tag: v1.0
